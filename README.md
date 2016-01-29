@@ -1,4 +1,4 @@
-# Testing .Jar 
-TEST
-java -jar YourTests.jar  classpath:featuresPathPackage --glue StepsPathPackage
+# Web Services, Soap
+Client - Server Generation
+
 
