@@ -1,0 +1,15 @@
+<service name="CMSService">
+    <description>
+        This is a sample web service for the newspaper's
+        Content Managment System.
+    </description>
+
+    <parameter name="ServiceClass" locked="false">example2.CMSService</parameter>
+
+    <operation name="getNumberOfArticles">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+        <actionMapping>urn:getNumberOfArticles</actionMapping>
+    </operation>
+
+</service>
+
