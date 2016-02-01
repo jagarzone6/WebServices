@@ -64,7 +64,10 @@ public class AddArticleClient {
             serviceClient.setOptions(options);
             options.setTo(targetEPR);
 
-            serviceClient.fireAndForget(payload);
+            OMElement result =  serviceClient.sendReceive(payload);
+            String response = result.getText();
+            System.out.println("This is the response from Service "+response+" .");
+
 
         } catch (AxisFault axisFault) {
             axisFault.printStackTrace();
