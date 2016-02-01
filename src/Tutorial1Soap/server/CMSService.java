@@ -1,4 +1,4 @@
-package example2;
+package Tutorial1Soap.server;
 
 /**
  * Created by jage on 11/01/16.

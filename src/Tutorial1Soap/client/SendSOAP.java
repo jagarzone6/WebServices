@@ -1,14 +1,10 @@
-package example;
+package Tutorial1Soap.client;
 
 
 /**
  * Created by jage on 9/01/16.
  */
 import javax.xml.soap.*;
-import javax.xml.transform.*;
-import java.io.FileInputStream;
-import javax.xml.transform.stream.*;
-import org.w3c.dom.*;
 
 public class SendSOAP {
 
