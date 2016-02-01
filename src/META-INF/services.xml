@@ -10,6 +10,10 @@
         <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
         <actionMapping>urn:getNumberOfArticles</actionMapping>
     </operation>
+    <operation name="addArticle">
+        <messageReceiver class=
+                                 "org.apache.axis2.receivers.RawXMLINOnlyMessageReceiver"/>
+    </operation>
 
 </service>
 
