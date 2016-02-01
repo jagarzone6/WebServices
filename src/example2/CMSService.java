@@ -45,4 +45,13 @@ public class CMSService {
         return new Integer(42);
 
     }
+
+    public void addArticle(OMElement element)
+            throws XMLStreamException{
+        element.build();
+        System.out.println(element);
+    }
+
+
 }
+
