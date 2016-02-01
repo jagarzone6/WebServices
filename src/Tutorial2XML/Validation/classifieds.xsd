@@ -1,0 +1,36 @@
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+    <xsd:element name="ClassifiedList">
+        <xsd:complexType>
+
+            <xsd:sequence>
+                <xsd:element name="ClassifiedAd" maxOccurs="unbounded"
+                             type="ClassifiedAdType"/>
+
+            </xsd:sequence>
+
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="ClassifiedAdType">
+        <xsd:sequence>
+            <xsd:element type="xsd:string" name="content" />
+
+            <xsd:element type="xsd:string" name="endDate" />
+            <xsd:element type="xsd:string" name="startDate" />
+        </xsd:sequence>
+        <xsd:attribute name="adId" type="thousandOrGreater" />
+    </xsd:complexType>
+
+
+    <xsd:simpleType name="thousandOrGreater">
+        <xsd:restriction base="xsd:integer">
+
+            <xsd:minInclusive value="1000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
